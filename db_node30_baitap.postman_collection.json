@@ -1,0 +1,250 @@
+{
+	"info": {
+		"_postman_id": "523b3375-542d-4dbd-ae44-1ddf1f25ab42",
+		"name": "db_node30_baitap",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25792233"
+	},
+	"item": [
+		{
+			"name": "like_res",
+			"item": [
+				{
+					"name": "Lấy danh sách like_res",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/like-res/get-like-res",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"like-res",
+								"get-like-res"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "tạo like like_res",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\": \"3\",\r\n    \"res_id\": \"3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/like-res/create-res",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"like-res",
+								"create-res"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "unlike",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/like-res/unlike-res/2/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"like-res",
+								"unlike-res",
+								"2",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lấy danh sách like_res theo user_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/like-res/get-like-res-by-user/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"like-res",
+								"get-like-res-by-user",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lấy danh sách like_res theo res_id ",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/like-res/get-like-res-by-res/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"like-res",
+								"get-like-res-by-res",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "rate_res",
+			"item": [
+				{
+					"name": "lấy danh sách rate_res",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/rate-res/get-rate-res/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"rate-res",
+								"get-rate-res",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "tạo rate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\" : 3,\r\n    \"res_id\" : 1,\r\n    \"amount\" : 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/rate-res/create-rate",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"rate-res",
+								"create-rate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lấy danh sách rate theo user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/rate-res/get-rate-by-user/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"rate-res",
+								"get-rate-by-user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lấy danh sách rate theo res",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/rate-res/get-rate-by-res/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"rate-res",
+								"get-rate-by-res",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "order",
+			"item": [
+				{
+					"name": "lấy danh sách order",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/order/get-orders",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"order",
+								"get-orders"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
